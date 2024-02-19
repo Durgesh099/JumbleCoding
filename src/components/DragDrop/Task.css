@@ -1,0 +1,14 @@
+.task {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 95%;
+    padding: 5px 10px;
+    display: flex;
+    touch-action: none;
+    margin: 0px auto;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: pre-wrap;
+  }
+  
