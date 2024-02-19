@@ -31,6 +31,7 @@ export default function Main3({onNextClick}) {
   const handleDragEnd = (event) => {
     const { active, over } = event;
     if (active.id === over.id) return;
+    if(isSubmitButtonDisbled===true) return;
 
     setTasks((tasks) => {
       const originalPos = getTaskPos(active.id);
@@ -94,7 +95,7 @@ export default function Main3({onNextClick}) {
       </DndContext>
 
       <div style={{ display: "flex" }}>
-          <button id="resetBtn" className="Btn" onClick={reset} >
+          <button id="resetBtn" className="Btn" onClick={reset} disabled={isSubmitButtonDisbled}>
               Reset
           </button>
           <button id="submitBtn" className="Btn" onClick={submit} disabled={isSubmitButtonDisbled}
