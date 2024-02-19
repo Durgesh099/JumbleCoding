@@ -23,15 +23,13 @@ const HomePage = () => {
                 const response = await axios.post(`${process.env.REACT_APP_API}/api/start-game`, {
                   email: Email,
                 });
-                // Assuming the server sends a JWT token in the response
-                const jwtToken = response.data.token;
-          
-                // You can now handle the JWT token as needed, for example, set it in a cookie
-                // This is just an example; you might want to use a more secure method for storing tokens
-                localStorage.setItem("token",jwtToken)
-                
-                
                 let responseData = await response.data;
+
+                if(response.status===201){
+                    const jwtToken = response.data.token;
+                    localStorage.setItem("token",jwtToken)
+                }
+                
                 toast.success(responseData.message);
                 navigate("/home");
               } catch (error) {
