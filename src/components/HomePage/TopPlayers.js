@@ -10,7 +10,7 @@ const TopPlayers = () => {
   useEffect(() => {
     const fetchTopPlayers = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/api/top-players'); // Adjust the URL based on your server setup
+        const response = await axios.get(`${process.env.REACT_APP_API}/api/top-players`); // Adjust the URL based on your server setup
         const responseData = await response.data;
         setTopPlayers1(responseData.top1);
         setTopPlayers2(responseData.top2);
