@@ -1,16 +1,17 @@
 import React, {useState} from "react";
 import { useNavigate } from "react-router-dom";
+import LoaderSpinner from './LoaderSpinner'
 import toast from 'react-hot-toast';
 import axios from 'axios'
 
 const HomePage = () => {
+    const[Loading, setLoading]=useState(false);
     const[Email, setEmail]=useState('');
     const[Password, setPassword]=useState('');
     const navigate = useNavigate();
 
     const start =async (e)=>{
         e.preventDefault();
-        console.log(process.env.REACT_APP_API)
         if(Email.indexOf('@') === -1)
             toast.error('Enter valid email!');
         else if(Email.indexOf('.') === -1)
@@ -18,6 +19,7 @@ const HomePage = () => {
         else if(Password !== 'CF@2K24')
             toast.error('Enter Valid Password!');
         else{
+            setLoading(true);
             try {
                 // Make a POST request to the server
                 const response = await axios.post(`${process.env.REACT_APP_API}/api/start-game`, {
@@ -31,6 +33,7 @@ const HomePage = () => {
                 }
                 
                 toast.success(responseData.message);
+                setLoading(false);
                 navigate("/home");
               } catch (error) {
                 console.log(error)
@@ -41,6 +44,8 @@ const HomePage = () => {
 
     return (
         <section className="h-screen">
+            {Loading && <LoaderSpinner/>}
+            <div></div>
             <div className="h-full">
                 {/* <!-- Left column container with background--> */}
                 <div className="g-6 flex h-full flex-wrap items-center justify-around">

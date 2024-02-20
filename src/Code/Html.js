@@ -6,11 +6,11 @@ const code =
     },
     {
         id: 2,
-        title: "<p style='color: red;'>Japanese Yen: &yen;</p>"
+        title: "<p style='color: red;'>Japanese Yen: ¥</p>"
     },
     {
         id: 3,
-        title: "<p style='color: teal;'>Indian Rupee: &#8377;</p>"
+        title: "<p style='color: teal;'>Indian Rupee: ₹</p>"
     },
     {
         id: 4,
@@ -18,7 +18,7 @@ const code =
     },
     {
         id: 5,
-        title: "<p style='color: brown; font-weight: bold;'>Canadian Dollar: &#36;CAD</p>"
+        title: "<p style='color: brown; font-weight: bold;'>Canadian Dollar: $CAD</p>"
     },
     {
         id: 6,
@@ -26,15 +26,15 @@ const code =
     },
     {
         id: 7,
-        title: "<p style='color: darkblue; font-style: italic;'>South Korean Won: &#8361;</p>"
+        title: "<p style='color: darkblue; font-style: italic;'>South Korean Won: ₩</p>"
     },
     {
         id: 8,
-        title: "<p style='color: green;'>US Dollar: &#36;</p>"
+        title: "<p style='color: green;'>US Dollar: $;</p>"
     },
     {
         id: 9,
-        title: "<p style='color: purple; font-weight: bold;'>British Pound: &pound;</p>"
+        title: "<p style='color: purple; font-weight: bold;'>British Pound: £</p>"
     },
     {
         id: 10,
@@ -42,19 +42,19 @@ const code =
     },
     {
         id: 11,
-        title: "<p style='color: orange;'>Swiss Franc: &#8355;</p>"
+        title: "<p style='color: orange;'>Swiss Franc: ₣</p>"
     },
     {
         id: 12,
-        title: "<p style='color: blue; font-weight: bold; font-style: italic;'>Euro: &euro;</p>"
+        title: "<p style='color: blue; font-weight: bold; font-style: italic;'>Euro: €</p>"
     },
     {
         id: 13,
-        title: "<p style='color: darkred;'>Chinese Yuan: &#165;</p>"
+        title: "<p style='color: darkred;'>Chinese Yuan: ¥</p>"
     },
     {
         id: 14,
-        title: "<p style='color: red;'>US Dollar: &#36;</p>"
+        title: "<p style='color: red;'>US Dollar: $</p>"
     },
     {
         id: 15,
@@ -62,15 +62,15 @@ const code =
     },
     {
         id: 16,
-        title: "<p style='color: purple; font-style: italic;'>British Pound: &pound;</p>"
+        title: "<p style='color: purple; font-style: italic;'>British Pound: £</p>"
     },
     {
         id: 17,
-        title: "<p style='color: darkcyan; font-weight: bold; font-style: italic;'>Australian Dollar: &#36;AUD</p>"
+        title: "<p style='color: darkcyan; font-weight: bold; font-style: italic;'>Australian Dollar: $AUD</p>"
     },
     {
         id: 18,
-        title: "<p style='color: blue;'>Japanese Yen: &yen;</p>"
+        title: "<p style='color: blue;'>Japanese Yen: ¥</p>"
     }
 ];
 
