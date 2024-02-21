@@ -13,10 +13,12 @@ import toast from "react-hot-toast";
 import { arrayMove, sortableKeyboardCoordinates } from "@dnd-kit/sortable";
 import code from '../../../Code/SQL'
 import { Column } from "../Column";
+import LoaderSpinner from '../../HomePage/LoaderSpinner'
 import "./Main.css";
 
 
 export default function Main2({onNextClick}) {
+  const [Loading,setLoading]=useState(false)
   const [isSubmitButtonDisbled, setIsSubmitButtonDisabled] = useState(localStorage.getItem("submit2") || false);
   const [isNextButtonDisabled, setIsNextButtonDisabled] = useState(true);
   const [tasks, setTasks] = useState(code);
@@ -58,7 +60,7 @@ export default function Main2({onNextClick}) {
     let questionId = "2";
     let time = localStorage.getItem("timer2");
     let token = localStorage.getItem("token");
-
+    setLoading(true)
     try {
       // Make a POST request to the server
       const response = await axios.post(`${process.env.REACT_APP_API}/api/submit-answers`, {
@@ -76,14 +78,17 @@ export default function Main2({onNextClick}) {
       const responseData = await response.data;
       setIsSubmitButtonDisabled(true);
       localStorage.setItem("submit2",true)
+      setLoading(false)
       return toast.success(responseData.message);
     } catch (error) {
+      setLoading(false)
       return toast.error('Error submitting answers!', error.message);
     }
   }
 
   return (
     <div className="App">
+      {Loading && <LoaderSpinner/>}
       <div id="timer">
           <CountdownTimer onComplete={handleComplete} timer={'timer2'}/>
       </div>

@@ -36,16 +36,19 @@ const HomePage = () => {
                 setLoading(false);
                 navigate("/home");
               } catch (error) {
-                console.log(error)
-                toast.error('Could not start..', error.message);
+                setLoading(false);
+                toast.error('Could not start!', error.message);
               }
         }
     }
 
     return (
-        <section className="h-screen">
+        <section className="h-full">
             {Loading && <LoaderSpinner/>}
-            <div></div>
+            <div className="flex justify-center items-center">
+                <img src="https://i.ibb.co/pw4KHHQ/FFF.png" alt="Title" className="w-20" />
+                <h1 className="text-2xl text-blue-700">Faster Finger First</h1>
+            </div>
             <div className="h-full">
                 {/* <!-- Left column container with background--> */}
                 <div className="g-6 flex h-full flex-wrap items-center justify-around">
