@@ -27,9 +27,9 @@ const Home = () => {
     return (
         <div>
             <div>
-                <div className='add1'>Advertisement 1</div>
-                <div className='add2'>Advertisement 2</div>
-                
+                <div className='add1'><img src="" alt='Corecode-Academy'/></div>
+                <div className='add2'><img src="" alt='Posit-Source'/></div>
+                <div className='add3'><img src="" alt='Sana-CyberForensics'/></div>
                 {currentPage !== 'complete' &&
                 <div className='output'>
                     {currentPage==='main1' && 
