@@ -30,7 +30,7 @@ const code =
     },
     {
         id: 8,
-        title: "<p style='color: green;'>US Dollar: $;</p>"
+        title: "<p style='color: green;'>US Dollar: $</p>"
     },
     {
         id: 9,
