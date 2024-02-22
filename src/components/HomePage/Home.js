@@ -37,11 +37,16 @@ const Home = () => {
                     }
                     {currentPage==='main2' &&
                         <>
-                            <h3>SQL Table</h3>
-                            <img src="https://i.ibb.co/VCLhJmB/Screenshot-2024-02-19-194843.png" alt="output" border="0"/>
+                            <h3>Expected Output</h3>
+                            <img src="https://i.ibb.co/jwTMhXz/op.png" alt="output" border="0"/>
                         </>
                     }
-                    {currentPage==='main3' && <h3>Selection Sort Algorithm.</h3>}
+                    {currentPage==='main3' &&
+                        <>
+                            <h3>Expected Output</h3>
+                            <img src="https://i.ibb.co/Gngsy5s/Screenshot-2024-02-23-014438.png" alt="output" border="0"/>
+                        </>
+                    }
                 </div>}
 
                 <div id="container" className="container">

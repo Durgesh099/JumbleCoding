@@ -1,33 +1,49 @@
 const code = [
     {
-        id: 1,
-        title: "            int temp = arr[min_index];"
+        id: 10,
+        title: "    return 0;"
     },
     {
-        id: 2,
-        title: "    int min_index = i;"
+        id: 9,
+        title: "    }"
     },
     {
-        id: 3,
-        title: "    for (int j = i+1; j < n; j++)"
+        id: 5,
+        title: "        for (int j = 0; j < i; j++) {"
     },
     {
         id: 4,
-        title: "            arr[i] = temp;"
+        title: "    for (int i = n - 1; i > 0; i--) {"
     },
     {
-      id: 5,
-      title: "for (int i = 0; i < n-1; i++)"
+        id: 1,
+        title: "#include <iostream>"
+    },
+    {
+        id: 2,
+        title: "int main() {"
+    },
+    {
+        id: 8,
+        title: "        std::cout << std::endl;"
     },
     {
         id: 6,
-        title: "            arr[min_index] = arr[i];"
+        title: `            std::cout << "*";`
     },
     {
-      id: 7,
-      title: "        if (arr[j] < arr[min_index])"
-    }
-];
+        id: 7,
+        title: "        };"
+    },
+    {
+        id: 11,
+        title: "}"
+    },
+    {
+        id: 3,
+        title: "    int n = 5;"
+    },
+]
   
 
 export default code;

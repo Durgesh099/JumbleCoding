@@ -70,17 +70,19 @@
     display: flex;
     flex-direction: row;
     position: relative;
-    width: 60%;
+    width: 700px;
     height: 170px;
     bottom: 0px;
     gap: 50px;
     align-items: center;
-    padding-left: 30px;
+    padding: 30px;
     border: 1px solid;
+    margin: 100px  auto 0px auto;
 }
 .add1{
     height: 70px;
     width: 70px;
+    margin-bottom: 30px;
 }
 .add2{
     height: 100px;
@@ -95,6 +97,7 @@
     width: 100px;
 }
 .add5{
+    margin-top: 30px;
     height: 100px;
     width: 100px;
 }
