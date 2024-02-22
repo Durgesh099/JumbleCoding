@@ -38,7 +38,7 @@ const Home = () => {
                     {currentPage==='main2' &&
                         <>
                             <h3>Expected Output</h3>
-                            <img src="https://i.ibb.co/jwTMhXz/op.png" alt="output" border="0"/>
+                            <img src="https://i.ibb.co/K65SB0Q/image-1.png" alt="output" border="0"/>
                         </>
                     }
                     {currentPage==='main3' &&
