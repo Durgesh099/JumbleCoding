@@ -16,7 +16,7 @@ const HomePage = () => {
             toast.error('Enter valid email!');
         else if(Email.indexOf('.') === -1)
             toast.error('Enter valid email!');
-        else if(Password !== 'CF@2024')
+        else if(Password !== 'CF--24')
             toast.error('Enter Valid Password!');
         else{
             setLoading(true);
