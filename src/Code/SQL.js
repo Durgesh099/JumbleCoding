@@ -1,45 +1,17 @@
 let code = 
 [
-    {
-        id: 6,
-        title: "       ('Emma', 'IT', 65000),"
-    },
-    {
-        id: 9,
-        title: "       ('Mark', 'Marketing', 58000);"
-    },
-    {
-        id: 3,
-        title: "       ('Jane', 'HR', 55000),"
-    },
-    {
-        id: 10,
-        title: "SELECT * from Employee;"
-    },
-    {
-        id: 2,
-        title: "VALUES ('John', 'IT', 60000),"
-    },
-    {
-        id: 8,
-        title: "       ('Ema', 'IT', 65000),"
-    },
-    {
-        id: 7,
-        title: "       ('Mrak', 'Marekting', 58000),"
-    },
-    {
-        id: 5,
-        title: "       ('Jane', 'HR', 50500),"
-    },
-    {
-        id: 1,
-        title: "INSERT INTO Employee (FirstName, Department, Salary)"
-    },
-    {
-        id: 4,
-        title: "       ('Mark', 'Finance', 80000),"
-    }
+    { id: 1, title: `INSERT INTO student_table (name, roll_no, class, city)
+VALUES ('Harsh', 19001, 'Class A', 'New York');` },
+{ id: 2, title: `INSERT INTO student_table (name, roll_no, class, city)
+VALUES ('Vaibhav', 19081, 'Class A', 'Paris');` },
+{ id: 3, title: `SELECT * FROM student_table;` },
+{ id: 4, title:`INSERT INTO student_table (name, roll_no, class, city)
+VALUES ('Aditya',29031 , 'Class B', 'New York');`},
+{ id: 5, title: `INSERT INTO student_table (name, roll_no, class, city)
+VALUES ('Aditya', 39061, 'Class C', 'Tokyo');`},
+    { id: 6, title: `CREATE TABLE student_table (name VARCHAR2(50),roll_no NUMBER,class VARCHAR2(20),city VARCHAR2(50));` },
+    { id: 7, title: `INSERT INTO student_table (name, roll_no, class, city)
+VALUES ('Durgesh', 29005, 'Class B', 'London');` }
 ]
 
 export default code;

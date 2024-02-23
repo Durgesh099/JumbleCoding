@@ -32,19 +32,19 @@ const Home = () => {
                     {currentPage==='main1' && 
                         <>
                             <h3>Expected Output</h3>
-                            <img src="https://i.ibb.co/dr9cBDm/html-cf.jpg" alt="output" border="0"/>
+                            <img src="https://i.ibb.co/hc63W6C/HTML2.png" alt="output" border="0"/>
                         </>
                     }
                     {currentPage==='main2' &&
                         <>
                             <h3>Expected Output</h3>
-                            <img src="https://i.ibb.co/K65SB0Q/image-1.png" alt="output" border="0"/>
+                            <img src="https://i.ibb.co/fVWmthn/SQL-2.png" alt="output" border="0"/>
                         </>
                     }
                     {currentPage==='main3' &&
                         <>
                             <h3>Expected Output</h3>
-                            <img src="https://i.ibb.co/Gngsy5s/Screenshot-2024-02-23-014438.png" alt="output" border="0"/>
+                            <img src="https://i.ibb.co/VTwhxvr/DSA-2.pngg" alt="output" border="0"/>
                         </>
                     }
                 </div>}

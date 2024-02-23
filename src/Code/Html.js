@@ -2,39 +2,39 @@ const code =
 [
     {
         id: 1,
-        title: "</body>"
+        title: `<p style="color: gray;">Japanese Yen (JPY)</p>`
     },
     {
         id: 2,
-        title: "<p style='color: red;'>Japanese Yen: ¥</p>"
+        title: `<p style="color: violet;">Euro (EUR)</p>`
     },
     {
         id: 3,
-        title: "<p style='color: teal;'>Indian Rupee: ₹</p>"
+        title: `<!DOCTYPE html>`
     },
     {
         id: 4,
-        title: "<!DOCTYPE html>"
+        title: `<p style="color: blue;">Swiss Franc (CHF)</p>`
     },
     {
         id: 5,
-        title: "<p style='color: brown; font-weight: bold;'>Canadian Dollar: $CAD</p>"
+        title: `<!DOCTYPE html>`
     },
     {
         id: 6,
-        title: "</html>"
+        title: `</body>`
     },
     {
         id: 7,
-        title: "<p style='color: darkblue; font-style: italic;'>South Korean Won: ₩</p>"
+        title: `<p style="color: yellow;">Chinese Yuan (CNY)</p>`
     },
     {
         id: 8,
-        title: "<p style='color: green;'>US Dollar: $</p>"
+        title: `<p style="color: black;">US Dollar (USD)</p>`
     },
     {
         id: 9,
-        title: "<p style='color: purple; font-weight: bold;'>British Pound: £</p>"
+        title: `<p style="color: red;">Australian Dollar (AUD)</p>`
     },
     {
         id: 10,
@@ -42,19 +42,19 @@ const code =
     },
     {
         id: 11,
-        title: "<p style='color: orange;'>Swiss Franc: ₣</p>"
+        title: `<p style="color: green;">Canadian Dollar (CAD)</p>`
     },
     {
         id: 12,
-        title: "<p style='color: blue; font-weight: bold; font-style: italic;'>Euro: €</p>"
+        title: `<p style="color: gray;">British Pound (GBP)</p>`
     },
     {
         id: 13,
-        title: "<p style='color: darkred;'>Chinese Yuan: ¥</p>"
+        title: "</html>"
     },
     {
         id: 14,
-        title: "<p style='color: red;'>US Dollar: $</p>"
+        title: `<p style="color: pink;">Japanese Yen (JPY)</p>`
     },
     {
         id: 15,
@@ -62,15 +62,11 @@ const code =
     },
     {
         id: 16,
-        title: "<p style='color: purple; font-style: italic;'>British Pound: £</p>"
-    },
+        title: `<p style="color: black;">Chinese Yuan (CNY)</p>`
+    },    
     {
         id: 17,
-        title: "<p style='color: darkcyan; font-weight: bold; font-style: italic;'>Australian Dollar: $AUD</p>"
-    },
-    {
-        id: 18,
-        title: "<p style='color: blue;'>Japanese Yen: ¥</p>"
+        title: `<p style="color: red;">Euro (EUR)</p>`
     }
 ];
 
