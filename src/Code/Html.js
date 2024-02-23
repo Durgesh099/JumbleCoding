@@ -9,10 +9,6 @@ const code =
         title: `<p style="color: violet;">Euro (EUR)</p>`
     },
     {
-        id: 3,
-        title: `<!DOCTYPE html>`
-    },
-    {
         id: 4,
         title: `<p style="color: blue;">Swiss Franc (CHF)</p>`
     },
