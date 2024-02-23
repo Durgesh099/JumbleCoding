@@ -43,11 +43,11 @@ const HomePage = () => {
     }
 
     return (
-        <section className="h-full">
+        <section className="h-full bg-[#ffffe6]">
             {Loading && <LoaderSpinner/>}
             <div className="flex justify-center items-center">
                 <img src="https://i.ibb.co/pw4KHHQ/FFF.png" alt="Title" className="w-20" />
-                <h1 className="text-2xl text-blue-700">Faster Finger First</h1>
+                <h1 className="text-3xl text-blue-700 font-bold">Fastest Finger First</h1>
             </div>
             <div className="h-full">
                 {/* <!-- Left column container with background--> */}
@@ -70,7 +70,7 @@ const HomePage = () => {
                             </div>
 
                             <div className="mb-10">
-                                <label htmlFor="text" className="block text-sm font-medium text-gray-900 dark:text-white">Enter email address</label>
+                                <label htmlFor="text" className="block text-sm font-medium text-gray-900 dark:text-white">Enter Password</label>
                                 <input value={Password} onChange={e=>setPassword(e.target.value)} type="password" required id="email" className="bg-gray-50 border border-gray-300 text-black-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1 dark:bg-gray-100 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter Password"/>
                             </div>
 
@@ -87,6 +87,15 @@ const HomePage = () => {
                         </form>
                     </div>
                 </div>
+            </div>
+            <div className="w-full flex justify-center items-center mb-2">
+                <ul className="border p-5 font-bold bg-white">
+                    <li>1. Enter valid email address.</li>
+                    <li>2. Invigilators will provide password to start the game.</li>
+                    <li>3. There will be 3 sections - HTML, SQL and DSA</li> 
+                    <li>4. For each section you will get 3mins to attempt.</li>
+                    <li>5. You will be provided with jumbled code, which you have to SUBMIT in time. The Faster, the better!</li>
+                </ul>
             </div>
         </section>
     )
