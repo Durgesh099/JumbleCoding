@@ -5,7 +5,7 @@ function CountdownTimer({ onComplete, timer }) {
 
     // adding current timer to local storage
     const [seconds, setSeconds] = useState(
-        parseInt(localStorage.getItem(timer) || 300)  //5mins
+        parseInt(localStorage.getItem(timer) || 180)  //5mins
     );
 
     useEffect(() => setIsActive(true), []);
