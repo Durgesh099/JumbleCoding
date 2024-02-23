@@ -33,7 +33,7 @@ const code = [
     },
     {
         id: 7,
-        title: "        };"
+        title: "        }"
     },
     {
         id: 11,

@@ -90,7 +90,7 @@ export default function Main3({onNextClick}) {
       <div id="timer">
           <CountdownTimer onComplete={handleComplete} timer={'timer3'}/>
       </div>
-      <h1>Given is the Jumbled SQL code. Please Rearrange and Submit.</h1>
+      <h1>Given is the Jumbled DSA code. Please Rearrange and Submit.</h1>
       <DndContext
         sensors={sensors}
         collisionDetection={closestCorners}

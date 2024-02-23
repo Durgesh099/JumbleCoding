@@ -50,9 +50,9 @@ const Home = () => {
                 </div>}
 
                 <div id="container" className="container">
-                    {currentPage === 'main1' && <Main1 onNextClick={handleNextClick} />}
+                    {currentPage === 'main3' && <Main1 onNextClick={handleNextClick} />}
                     {currentPage === 'main2' && <Main2 onNextClick={handleNextClick} />}
-                    {currentPage === 'main3' && <Main3 onNextClick={handleNextClick} />}
+                    {currentPage === 'main1' && <Main3 onNextClick={handleNextClick} />}
                     {currentPage === 'complete' && <Complete/>}
                 </div>
                 
