@@ -16,7 +16,7 @@ const HomePage = () => {
             toast.error('Enter valid email!');
         else if(Email.indexOf('.') === -1)
             toast.error('Enter valid email!');
-        else if(Password !== 'FFF2024')
+        else if(Password !== 'CF2024')
             toast.error('Enter Valid Password!');
         else{
             setLoading(true);
@@ -91,7 +91,7 @@ const HomePage = () => {
             <div className="w-full flex justify-center items-center mb-2">
                 <ul className="border p-5 font-bold bg-white">
                     <li>1. Enter valid email address.</li>
-                    <li>2. Invigilators will provide password to start the game.</li>
+                    <li>2. Invigilators will provide password to start the game.<span className="italic text-gray-400"> (Password:CF2024)</span></li>
                     <li>3. There will be 3 sections - HTML, SQL and DSA</li> 
                     <li>4. For each section you will get 3mins to attempt.</li>
                     <li>5. You will be provided with jumbled code, which you have to SUBMIT in time. The Faster, the better!</li>
