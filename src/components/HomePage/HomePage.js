@@ -31,6 +31,13 @@ const HomePage = () => {
                     const jwtToken = response.data.token;
                     localStorage.setItem("token",jwtToken)
                 }
+
+                const showAlertAfterDelay = () => {
+                    setTimeout(() => {
+                      toast.loading('Loading may take time due to free version of server.',{duration:3000});
+                    }, 8000);
+                  };
+                showAlertAfterDelay();
                 
                 toast.success(responseData.message);
                 setLoading(false);
@@ -94,7 +101,8 @@ const HomePage = () => {
                     <li>2. Invigilators will provide password to start the game.<span className="italic text-gray-400"> (Password:CF2024)</span></li>
                     <li>3. There will be 3 sections - HTML, SQL and DSA</li> 
                     <li>4. For each section you will get 3mins to attempt.</li>
-                    <li>5. You will be provided with jumbled code, which you have to SUBMIT in time. The Faster, the better!</li>
+                    <li>5. You will be provided jumbled codes, which you have to SUBMIT sooner or in time. The Faster, the better!</li>
+                    <li>6. Press the Submit button after arranging the code!</li>
                 </ul>
             </div>
         </section>
